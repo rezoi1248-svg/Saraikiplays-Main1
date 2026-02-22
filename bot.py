@@ -699,9 +699,7 @@ async def on_command_error(ctx: commands.Context, error: commands.CommandError):
 # ═══════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
-    if TOKEN == "YOUR_MAIN_BOT_TOKEN_HERE":
-        print("⚠️  WARRIOR BOT: warrior_bot.py mein BOT_TOKEN set karein!")
-    else:
-        bot.run(TOKEN, log_handler=None)Bot ki Key set karein!")
+    if not TOKEN:
+        print("❌ TOKEN not found in .env file!")
     else:
         bot.run(TOKEN, log_handler=None)
