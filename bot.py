@@ -699,9 +699,9 @@ async def on_command_error(ctx: commands.Context, error: commands.CommandError):
 # ═══════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
-    if BOT_TOKEN == "YOUR_MAIN_BOT_TOKEN_HERE":
+    if TOKEN == "YOUR_MAIN_BOT_TOKEN_HERE":
         print("⚠️  WARRIOR BOT: warrior_bot.py mein BOT_TOKEN set karein!")
     else:
-        bot.run(BOT_TOKEN, log_handler=None)OKEN set karein!")
+        bot.run(TOKEN, log_handler=None)Bot ki Key set karein!")
     else:
-        bot.run(BOT_TOKEN, log_handler=None)
+        bot.run(TOKEN, log_handler=None)
